@@ -1,0 +1,110 @@
+/* 전체 컨테이너 스타일 */
+.form-container {
+    width: 50%;
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* 내용이 넘칠 경우 처리 */
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: translateY(-5px); /* 마우스를 올렸을 때 살짝 위로 올라가는 효과 */
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* 입력 폼 스타일 */
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+/* 텍스트 영역의 placeholder 스타일 */
+textarea::placeholder {
+    font-size: 1.3em;  /* 글씨 크기 조정 */
+}
+
+/* 텍스트영역 스타일 */
+textarea {
+    height: 150px; /* 기본 높이 설정 */
+    resize: vertical; /* 세로로 크기 조정 가능 */
+    font-size: larger;
+}
+
+/* 버튼 스타일 */
+button {
+    width: 20%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* 버튼을 클릭할 때 살짝 올라가는 효과 */
+}
+
+button:active {
+    background-color: #004494;
+    transform: translateY(0); /* 클릭 시 눌리는 효과 */
+}
+
+/* 파일 업로드 스타일 */
+input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #eef2f7;
+}
+
+/* 작은 텍스트 스타일 */
+.small-text {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+}
